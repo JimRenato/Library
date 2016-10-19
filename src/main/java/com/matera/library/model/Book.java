@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Livro {
+public class Book {
 
 	@Id
 	private String id;
@@ -66,7 +66,7 @@ public class Livro {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Livro other = (Livro) obj;
+		Book other = (Book) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

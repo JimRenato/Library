@@ -1,0 +1,28 @@
+1. Crie um programa que dado um arquivo texto de layout posicional, importe para uma tabela do BD a entidade Produto.
+2. Adicione a funcionalidade de exportar o cadastro de Produtos como arquivo texto seguindo o mesmo layout.
+3. Liste na tela os produtos, formatando os campos data e númericos adequadamente.
+
+Layout do arquivo:
+Campo                  Tipo/Tamanho
+código do produto      caracter(10)
+descrição do produto   caracter(50)
+preço                  numérico(15,2)
+data cadastro          date(ddmmaaaa)
+
+Exemplo de arquivo:
+LIV0112457LIVRO O SENHOR DOS ANEIS                          00000000000825001022000
+LIV0181246LIVRO VIAGEM A LUA                                00000000000350015062007
+
+Dados lidos a partir desse arquivo:
+
+Código: LIV0112457
+Descrição: LIVRO O SENHOR DOS ANEIS
+Preço: 82,50
+Data Cadastro: 01/02/2000
+
+Código: LIV0181246
+Descrição: LIVRO VIAGEM A LUA
+Preço: 35,00
+Data Cadastro: 15/06/2007
+
+Nome da tabela a ser criada: DIS_PRODUTO.
