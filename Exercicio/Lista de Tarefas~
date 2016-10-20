@@ -1,9 +1,11 @@
-- Configurar ambiente Spring [] | Prazo: 20/10/2016.
-- Configurar BD [] | Prazo: 20/10/2016.
-- Criar funcionalidade de leitura de arquivo [] | Prazo: 20/10/2016.
+- Configurar ambiente Spring [OK] | Prazo: 20/10/2016.
+- Configurar BD [OK] | Prazo: 20/10/2016.
+- Criar funcionalidade de leitura de arquivo [OK] | Prazo: 20/10/2016.
 - Criar funcionalidade de formatação dos dados do arquivo [] | Prazo: 21/10/2016.
 - Salvar dados do arquivo no BD [] | Prazo: 21/10/2016.
 - Buscar dados do BD [] | Prazo: 21/10/2016.
 - Listar os produtos na tela com formatação ideal [] | Prazo: 24/10/2016.
 - Criar funcionalidade de exportar novos dados ao arquivo [] | Prazo: 24/10/2016.
 - Criar testes unitários [] | Prazo: 25/10/2016.
+------------------------------------------------------
+Para cada funcionalidade, criar uma branch e quando terminar abre um PR e coloca o Daniel como reviewer.

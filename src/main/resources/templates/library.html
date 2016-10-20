@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8" />
+<title>Biblioteca</title>
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap-datepicker.standalone.min.css}" />
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script th:src="@{/js/fileScript.js}"></script>
+
+</head>
+<body>
+
+	<div class="tableLibraryTitle">
+		<table class="table-bordered">
+			<thead>
+				<tr>
+					<th class="text-center col-md-1" id="title"><h3>Biblioteca</h3></th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="tableLibrary">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th class="text-center col-md-1">Código</th>
+					<th class="text-center col-md-2">Descrição</th>
+					<th class="text-center col-md-1">Preço</th>
+					<th class="text-center col-md-1">Data do Cadastro</th>
+				</tr>
+			</thead>
+		</table>
+		<table class="table table-bordered table-striped">
+			<tbody>
+				<tr th:each="book : ${bookList}">
+					<td class="text-center col-md-1" th:text="${book.id}">1</td>
+					<td class="text-center col-md-2" th:text="${book.descricao}">1</td>
+					<td class="text-center col-md-1" th:text="|R$ ${{book.preco}} |"></td>
+					<td class="text-center col-md-1" th:text="${{book.data}}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
