@@ -1,10 +1,9 @@
-package com.matera.library.model;
-
-import java.math.BigDecimal;
-import java.sql.Date;
+package com.rsm.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.math.BigDecimal;
+import java.sql.Date;
 
 @Entity
 public class Book {
@@ -12,11 +11,11 @@ public class Book {
 	@Id
 	private String id;
 
-	private String descricao;
+	private String description;
 
-	private BigDecimal preco;
+	private BigDecimal price;
 
-	private Date data;
+	private Date date;
 
 	public String getId() {
 		return id;
@@ -26,28 +25,28 @@ public class Book {
 		this.id = id;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public BigDecimal getPreco() {
-		return preco;
+	public BigDecimal getPrice() {
+		return price;
 	}
 
-	public void setPreco(BigDecimal preco) {
-		this.preco = preco;
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
 
-	public Date getData() {
-		return data;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	@Override
@@ -77,7 +76,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Livro [id=" + id + ", descricao=" + descricao + "]";
+		return "Book [id=" + id + ", description=" + description + "]";
 	}
 
 }

@@ -1,8 +1,8 @@
-package com.matera.library.repository;
+package com.rsm.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.matera.library.model.Book;
+import com.rsm.model.Book;
 
 public interface Books extends JpaRepository<Book, String> {
 

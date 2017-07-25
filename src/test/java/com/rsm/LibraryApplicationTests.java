@@ -1,4 +1,4 @@
-package com.matera.library;
+package com.rsm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

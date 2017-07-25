@@ -1,4 +1,4 @@
-package com.matera.library.model;
+package com.rsm.model;
 
 import java.util.List;
 

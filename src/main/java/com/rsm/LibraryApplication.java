@@ -1,4 +1,4 @@
-package com.matera.library;
+package com.rsm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

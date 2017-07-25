@@ -1,13 +1,13 @@
-package com.matera.library.controller;
+package com.rsm.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.matera.library.functions.ReadFile;
-import com.matera.library.model.Book;
-import com.matera.library.service.BookService;
+import com.rsm.functions.ReadFile;
+import com.rsm.model.Book;
+import com.rsm.service.BookService;
 
 @Controller
 @RequestMapping("/library")

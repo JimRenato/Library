@@ -1,4 +1,4 @@
-package com.matera.library.controller;
+package com.rsm.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.matera.library.model.FileUploadForm;
+import com.rsm.model.FileUploadForm;
 
 @Controller
 public class FileUploadController {

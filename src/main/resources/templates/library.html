@@ -4,7 +4,7 @@
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 <meta charset="UTF-8" />
-<title>Biblioteca</title>
+<title>Library</title>
 <link rel="stylesheet" type="text/css"
 	th:href="@{/css/bootstrap.min.css}" />
 <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
@@ -22,7 +22,7 @@
 		<table class="table-bordered">
 			<thead>
 				<tr>
-					<th class="text-center col-md-1" id="title"><h3>Biblioteca</h3></th>
+					<th class="text-center col-md-1" id="title"><h3>Library</h3></th>
 				</tr>
 			</thead>
 		</table>
@@ -32,10 +32,10 @@
 		<table class="table table-bordered table-striped">
 			<thead>
 				<tr>
-					<th class="text-center col-md-1">Código</th>
-					<th class="text-center col-md-2">Descrição</th>
-					<th class="text-center col-md-1">Preço</th>
-					<th class="text-center col-md-1">Data do Cadastro</th>
+					<th class="text-center col-md-1">ID</th>
+					<th class="text-center col-md-2">Description</th>
+					<th class="text-center col-md-1">Price</th>
+					<th class="text-center col-md-1">Date of Registration</th>
 				</tr>
 			</thead>
 		</table>
@@ -43,9 +43,9 @@
 			<tbody>
 				<tr th:each="book : ${bookList}">
 					<td class="text-center col-md-1" th:text="${book.id}">1</td>
-					<td class="text-center col-md-2" th:text="${book.descricao}">1</td>
-					<td class="text-center col-md-1" th:text="|R$ ${{book.preco}} |"></td>
-					<td class="text-center col-md-1" th:text="${{book.data}}"></td>
+					<td class="text-center col-md-2" th:text="${book.description}">1</td>
+					<td class="text-center col-md-1" th:text="|$ ${{book.price}} |"></td>
+					<td class="text-center col-md-1" th:text="${{book.date}}"></td>
 				</tr>
 			</tbody>
 		</table>
